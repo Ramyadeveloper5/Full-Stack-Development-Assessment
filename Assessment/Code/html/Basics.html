@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICS</title>
+    <!-- Simple Design to style our Web Page -->
+    <style>
+        /* Disable Default Behaviour */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Styling Head Tag */
+        h1 {
+            background-color: rgb(120, 120, 244);
+            text-align: center;
+            padding: 3px;
+        }
+
+        /* Styling Image Tag */
+        img {
+            width: 100%;
+        }
+
+        /* Styling Section Tag */
+        section {
+            width: 80%;
+            height: 70px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 10px;
+            padding: 12px;
+            box-shadow: 10px 10px white;
+        }
+
+        /* Styling Label Tag */
+        label {
+            font-size: 2rem;
+        }
+
+        /* Styling Input Tag */
+        input {
+            width: 10rem;
+            height: 2rem;
+            padding: 7px;
+            margin-left: 25px;
+            border-radius: 5px;
+        }
+
+        /* Styling Button Tag */
+
+        button {
+            width: 10rem;
+            height: 2rem;
+            padding: 2px;
+            margin-left: 10px;
+            margin-top: 1px;
+            border-radius: 5px;
+        }
+
+        /* Styling Blockquote Tag */
+
+        blockquote {
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: x-large;
+            text-align: center;
+            border: 1px solid black;
+            background-color: rgb(97, 97, 243);
+        }
+
+        /* Styling Div and Anchor Tag */
+
+        div,
+        a {
+            font-size: x-large;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Styling Paragraph Tag */
+
+        p {
+            font-size: large;
+        }
+
+        /* Styling List Item Tag */
+        li {
+            margin-left: 20px;
+            padding: 5px;
+
+        }
+
+        .list1 {
+            margin-left: 50px;
+            list-style-type: disc;
+        }
+
+        /* Styling Span Tag */
+
+        span {
+            font-size: larger;
+            font: bold;
+            padding: 10px;
+            color: black;
+        }
+
+        /* Styling Footer Tag */
+        footer {
+            background-color: rgb(120, 120, 244);
+            text-align: center;
+            height: 25px;
+            padding: 5px;
+        }
+
+        /* Psedo Class and Element */
+        span:hover {
+            color: blue;
+            font-size: 3rem;
+
+        }
+
+        footer:hover {
+            font-size: 1.5rem;
+            height: 30px;
+
+        }
+
+        blockquote:hover {
+            color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Heading Tag -->
+    <h1 id="heading">LEARNING ACADEMY</h1>
+
+    <!-- Image Tag -->
+    <figure>
+        <img src="../Images/AcademyLogo.jpg" alt="Academy Logo">
+    </figure>
+
+    <!-- Label Tag -->
+    <section id="#demo">
+        <!-- Label and Bold and Italic Tag  -->
+        <label for="freedemo"><b><i>Book a Free Demo</i></b></label>
+        <input type="text" name="name" id="name" placeholder="Name">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="number" name="number" id="number" placeholder="Phone Number">
+        <button type="submit" value="Submit">Submit</button>
+    </section>
+
+    <!-- BlockQoute Tage -->
+    <blockquote>
+        " Enhance Your Learning with us From Any Where "
+    </blockquote>
+
+    <!-- Div and Anchor Tag : Navigation within page -->
+    <div>
+        <a href="#heading" target="_top">View the Top Page ....Click Me</a>
+    </div>
+
+    <!-- List Item : Unordered -->
+    <p><span>Course Category List</span>
+    <ul>
+        <li>Html</li>
+        <li>Css</li>
+        <li>Javascript</li>
+    </ul>
+    </p><br>
+
+    <!-- Ordered List -->
+    <p><span>View the Duration of Course</span></p>
+    <ol>
+        <li>Html</li>
+        <ul>
+            <li class="list1">Duration : 1 Month</li>
+        </ul>
+        <li>Css</li>
+        <ul>
+            <li class="list1">Duration : 1 Month</li>
+        </ul>
+        <li>Javascript</li>
+        <ul>
+            <li class="list1">Duration : 1 Month</li>
+        </ul>
+    </ol>
+
+    <!-- Anchor Tag -->
+    <div>
+        <a href="#bottom">View the Bottom Page ....Click Me</a>
+    </div>
+
+    <!-- Horizontal Line -->
+    <hr>
+
+    <!-- Footer Tag  -->
+    <footer id="#bottom">
+        &copy; Learning Academy 2024, All Rights Reserved
+    </footer>
+</body>
+
+</html>

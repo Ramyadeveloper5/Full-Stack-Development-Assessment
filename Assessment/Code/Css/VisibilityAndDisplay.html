@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Display Elements</title>
+</head>
+
+<style>
+    /* Styling Visibility */
+    
+    .visibility-hidden{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        visibility: hidden;
+    }
+
+    .visibility-visible{
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        visibility: visible;
+    }
+
+    .visibility-collapsed{
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        visibility: collapse;
+    }
+
+    /* Display Elements */
+
+    p{
+        text-align: center;
+        padding: 2px;
+        
+    }
+
+    .display1{
+        width: 100%;
+        height: 50px;
+        background-color: aquamarine;
+        display: none;
+    }
+
+    .display2{
+        width: 100%;
+        height: 50px;
+        background-color: aquamarine;
+        display: inline;
+    }
+
+    .display3{
+        width: 100%;
+        height: 50px;
+        background-color: aquamarine;
+        display: block;
+    }
+
+    .display4{
+        width: 100%;
+        height: 50px;
+        background-color: aquamarine;
+        display: contents;
+    }
+
+    .display5{
+        width: 100%;
+        height: 50px;
+        background-color: aquamarine;
+        display: list-item;
+    }
+</style>
+
+<body>
+    <!-- Visibility Element (hidden, visible, collapse) -->
+    <div class="visibility-hidden"></div>
+    <div class="visibility-visible"></div>
+    <table class="visibility-collapsed">
+        <tr>
+            <td>Data1</td>
+            <td>Data2</td>
+        </tr>
+    </table>
+
+    <!-- Display Elements (none, inline, block, contents, list-item) -->
+    <div class="display1">
+        <p>Display Element : None </p>
+    </div>
+    <div class="display2">
+        <p>Display Element : Inline </p>
+    </div>
+    <div class="display3">
+        <p>Display Element : Block</p>
+    </div>
+    <div class="display4">
+        <p>Display Element : Contents </p>
+    </div>
+    <div class="display5">
+        <p>Display Element : List-Item </p>
+    </div>
+</body>
+
+</html>

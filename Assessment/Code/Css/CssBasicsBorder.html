@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Basics : Border</title>
+
+    <style>
+        /* Styling the Border */
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            padding: 10px;
+            text-align: center;
+            font-size: large;
+        }
+
+        .border {
+            width: 400px;
+            height: 180px;
+            margin: 50px auto;
+            border-top: 5px solid red;
+            border-left: 7px double yellowgreen;
+            border-bottom: 7px dotted plum;
+            border-right: 7px dashed blueviolet;
+        }
+
+        /* Styling the Page of height and width */
+        .box1 {
+            width: 100px;
+            height: 300%;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            background-color: palevioletred;
+        }
+
+        .box2 p {
+            margin-top: 5px;
+        }
+
+        .box2 {
+            width: 30%;
+            height: 50px;
+            margin: 10px auto;
+            text-align: center;
+            background-color: blueviolet;
+        }
+
+        /* Styling the Text */
+
+        section{
+            width: 500px;
+            height: 300px;
+            border: 1px solid grey;
+            border-radius: 20px;
+            box-shadow: 10px 10px whitesmoke;
+            margin: auto;
+        }
+
+        .text1 {
+            font-size: small;
+            color: blue;
+            font-style: normal;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: left;
+        }
+
+        .text2 {
+            font-size: medium;
+            color: pink;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: right;
+        }
+
+        .text3 {
+            font-size: large;
+            color: purple;
+            font-style: normal;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        .text4 {
+            font-size: x-large;
+            color: gold;
+            font-style: initial;
+            font-family: fantasy;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  Create a different page with the width, style and color of the 4 border-style(set different borders on each side with different patterns). -->
+    <div class="border">
+        <h1>Border</h1>
+        <p>To specify the style, width, and color of an element's border.</p>
+    </div>
+
+    <!-- Develop a page and set the height:(in pixels and %) and width:(in pixels and %) on 
+elements. -->
+    <div class="box1">
+        <p>Box1</p>
+    </div>
+    <div class="box2">
+        <p>Box2</p>
+    </div>
+
+    <!-- Different font-styles, font-size, font-family, colors and text-align.-->
+    <section>
+        <div class="text1">
+            <p>HyperText Markup Language : Structure of Webpage.</p>
+        </div>
+        <div class="text2">
+            <p>Cascading Style Sheet : Designing of Webpage.</p>
+        </div>
+        <div class="text3">
+            <p>Javascript : Perform Action</p>
+        </div>
+        <div class="text4">
+            <p>Frontend : Combination of Html, Css and Javascript</p>
+        </div>
+    </section>
+</body>
+
+</html>

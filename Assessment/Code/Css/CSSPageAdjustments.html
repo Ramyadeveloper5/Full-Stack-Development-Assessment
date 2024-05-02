@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Page Adjustments</title>
+</head>
+
+<style>
+
+    /* Styling the Table and if hover color change */
+    table{
+        width: 500px;
+        height: 200px;
+        border: 2px solid black;
+        padding: 20px;
+        border-collapse: collapse;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    body{
+        background-color: beige;
+    }
+
+    th{
+        background-color: aqua;
+    }
+
+    th,td{
+        border: 1px solid black;
+    }
+
+    /* Hover */
+    body:hover{
+        background-color: blueviolet;
+    }
+
+
+
+</style>
+
+<body>
+    <!--  A page which specify a black border for table and if hover on it, page should change it's colour. -->
+    <table>
+        <tr>
+            <th>Course Name</th>
+            <th>Abbreviation</th>
+        </tr>
+        <tr>
+            <td>Html</td>
+            <td>Hypertext Markup Language</td>
+        </tr>
+        <tr>
+            <td>Css</td>
+            <td>Cascading Style Sheet</td>
+        </tr>
+        <tr>
+            <td>Js</td>
+            <td>Javascript</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

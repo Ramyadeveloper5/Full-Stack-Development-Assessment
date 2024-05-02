@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Effects : Positioning</title>
+</head>
+
+<style>
+    /* 3. Add positions to CSS block (static, relative, fixed, absolute and sticky). */
+    div {
+        width: 100px;
+        height: 50px;
+        background-color: palevioletred;
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    .static {
+        position: static;
+        top: 10px;
+    }
+
+    .relative {
+        position: relative;
+        left: 200px;
+    }
+
+    .fixed {
+        position: fixed;
+        top: 50px;
+        right: 50px;
+    }
+
+    .absolute {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    .sticky {
+        position: sticky;
+        left: 1000px;
+    }
+</style>
+
+
+
+<body>
+    <!-- 3. Add positions to CSS block (static, relative, fixed, absolute and sticky). -->
+    <main>
+        <hr>
+        <section>
+            <div class="static">Static</div>
+        </section>
+        <section>
+            <div class="relative">Relative</div>
+        </section>
+        <section>
+            <div class="fixed">Fixed</div>
+        </section>
+        <section>
+            <div class="absolute">Absolute</div>
+        </section>
+        <section>
+            <div class="sticky">Sticky</div>
+        </section>
+    </main>
+</body>
+
+</html>

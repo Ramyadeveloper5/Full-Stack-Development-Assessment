@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Attributes and Restrictions</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <!--  Input attributes -->
+        <form action="#">
+
+            <!-- Text Field -->
+            <h2>TEXT FIELD</h2>
+            <div class="inputData">
+                <label for="fullname">Full name</label>
+                <input type="text" id="fullname" name="fullname">
+            </div><br>
+
+            <!-- Password Field -->
+            <h2>PASSWORD FIELD</h2>
+            <div class="inputData">
+                <label for="pswd">Password</label>
+                <input type="password" id="pswd" name="pswd">
+            </div><br>
+
+            <!-- Radio Field -->
+            <h2>RADIO FIELD</h2>
+            <div class="radio">
+                <label for="gender">Gender : </label>
+                <input type="radio" name="gender" id="male" value="male"> Male
+                <input type="radio" name="gender" id="female" value="female">Female
+                <input type="radio" name="gender" id="transgender" value="transgender">Transgender
+            </div><br>
+
+            <!-- Checkbox Field -->
+            <div class="check">
+                <h2>CHECKBOX FIELD</h2>
+                <label for="skills">Skills : </label>
+                <input type="checkbox" name="skills" id="frontend">Frontend Developer
+                <input type="checkbox" name="skills" id="backend">Backend Developer
+                <input type="checkbox" name="skills" id="fsd">Full Stack Developer
+            </div><br>
+
+            <!-- Submit Field -->
+            <h2>SUBMIT FIELD</h2>
+            <div class="inputData">
+                <input type="submit" value="Submit">
+            </div><br>
+
+            <!-- Reset Field -->
+            <h2>RESET FIELD</h2>
+            <div class="inputData">
+                <input type="reset" value="Reset">
+            </div><br>
+
+            <!-- Button Field -->
+            <h2>BUTTON FIELD</h2>
+            <div class="inputData">
+                <button type="button">Finish</button>
+            </div><br>
+
+            <!-- HTML5 input Types -->
+
+            <!-- Number Field -->
+            <h2>NUMBER FIELD</h2>
+            <div class="inputData">
+                <label for="number">Phone Number</label>
+                <input type="number" id="number" name="number">
+            </div><br>
+
+            <!-- Range Field -->
+            <h2>RANGE FIELD</h2>
+            <div class="inputData">
+                <label for="html">Html</label>
+                <input type="range" id="html" name="html" min="0" max="10" value="50">
+                <label for="css">Css</label>
+                <input type="range" id="css" name="css" min="0" max="10" value="50">
+                <label for="js">Javascript</label>
+                <input type="range" id="js" name="js" min="0" max="10" value="50">
+            </div><br>
+
+            <!-- Color Field -->
+            <h2>COLOR FIELD</h2>
+            <label for="color">Color : </label>
+            <input type="color" name="color" id="color">
+
+            <!-- Date Field -->
+            <h2>DATE FIELD</h2>
+            <label for="date">Date : </label>
+            <input type="date" name="date" id="date">
+
+            <!-- File Field -->
+            <h2>FILE FIELD</h2>
+            <input type="file" name="file" id="file">
+
+            <!-- Time Field -->
+            <h2>TIME FIELD</h2>
+            <label for="time">Time : </label>
+            <input type="time" name="time" id="time">
+
+            <!-- Month Field -->
+            <h2>MONTH FIELD</h2>
+            <label for="month">Month : </label>
+            <input type="month" name="month" id="month">
+
+            <!-- Email Field -->
+            <h2>EMAIL FIELD</h2>
+            <label for="email">Mail : </label>
+            <input type="email" name="email" id="email">
+
+            <!-- Week Field -->
+            <h2>WEEK FIELD</h2>
+            <label for="week">Week : </label>
+            <input type="week" name="week" id="week">
+
+            <!--  Input restrictions -->
+
+            <!-- Disabled -->
+            <h2>DISABLED FIELD</h2>
+            <label for="inputdisable"></label>
+            <input type="text" name="inputdisable" id="inputdisable" disabled>
+
+            <!-- Max -->
+            <h2>MAX</h2>
+            <label for="number">Maximum Number (10) :</label>
+            <input type="number" name="number" id="number" max="10">
+
+            <!-- Min -->
+            <h2>MIN</h2>
+            <label for="number">Minimum Number (5) :</label>
+            <input type="number" name="number" id="number" min="5">
+
+            <!-- Maxlength -->
+            <h2>MAXLENGTH</h2>
+            <label for="maxlengthdata">Maximum Text (15) :</label>
+            <input type="text" name="maxlengthdata" id="maxlengthdata" maxlength="15">
+
+            <!-- ReadOnly -->
+            <h2>READONLY</h2>
+            <label for="only">Text :</label>
+            <input type="text" name="only" id="only" placeholder="Read only Data" readonly>
+
+            <!-- Required -->
+            <h2>REQUIRED</h2>
+            <label for="compulsory">Text :</label>
+            <input type="text" name="compulsory" id="compulsory" required>
+
+            <!-- Size -->
+            <h2>SIZE</h2>
+            <input type="file" size="1kb">
+
+            <!--Value  -->
+            <h2>VALUE</h2>
+            <label for="inputvalue">Number :</label>
+            <input type="number" name="inputvalue" id="inputvalue" value="0">
+        </form>
+
+        <!-- Develop a web page using target attribute. -->
+
+        <div>
+            <p><b>LEARNING WEBSITE LINK</b></p>
+            <a href="https://www.udemy.com/" target="_top">Udemy</a><br><br>
+            <a href="https://www.coursera.org/" target="_blank">coursera</a><br><br>
+            <a href="https://www.w3schools.com/" target="_self">w3schools</a><br><br>
+            <a href="https://learning.google/" target="_parent">Google Learning</a><br>
+        </div>
+
+        <!-- I Frames -->
+
+        <div>
+            <h1><b>Top Technology</b></h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vaLXPv0ewHU?si=qBygrI8gYFe7y7jt"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Marquee Tag -->
+        <div>
+            <h1>Marquee Tag</h1>
+            <marquee behavior="scroll" direction="left" style="font-size: x-large; font-weight: bold; background-color: rgb(96, 96, 227);"><i>Learning is defined as "a process that results in change, which is brought about by experience and raises the possibility of better performance and learning in the future."</i></marquee>
+        </div>
+    </div>
+</body>
+
+</html>

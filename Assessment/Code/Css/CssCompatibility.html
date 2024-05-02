@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Compatibility</title>
+</head>
+
+<body>
+    <style>
+        /* 1. Create a table and apply table-layout as fixed and none */
+        .table-fixed {
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .table-none {
+            table-layout: auto;
+            width: 100%;
+        }
+
+        td {
+            border: 2px solid grey;
+            padding: 5px;
+        }
+
+        /* 2. Create a list and change its list-style-type */
+        ul li {
+            list-style-type: square;
+        }
+
+        ol li {
+            list-style-type: upper-alpha;
+        }
+
+        /* 3. Create a grid with of different types */
+        .basic-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .responsive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            /* Responsive columns */
+            grid-gap: 10px;
+            /* Gap between grid items */
+        }
+
+        .centered-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            /* Three columns with the middle one twice the width */
+            justify-items: center;
+            /* Center grid items horizontally */
+            align-items: center;
+            /* Center grid items vertically */
+            height: 300px;
+            /* Set a fixed height for visualization */
+            grid-gap: 10px;
+            /* Gap between grid items */
+        }
+
+        .nested-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* Two columns of equal width */
+            grid-gap: 10px;
+            /* Gap between grid items */
+        }
+
+        .grid-item {
+            background-color: #ddd;
+            /* Background color for grid items */
+            padding: 20px;
+            /* Padding for grid items */
+            text-align: center;
+            /* Center align text */
+        }
+
+
+    </style>
+
+
+
+
+
+    <!-- 1. Create a table and apply table-layout as fixed and none -->
+    <hr>
+    <section>
+        <h1>TABLE WITH FIXED LAYOUT</h1>
+        <table class="table-fixed">
+            <tr>
+                <td>
+                    HTML
+                </td>
+                <td>
+                    CSS
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Hypertext Markable Language
+                </td>
+                <td>
+                    Cascading Style Sheet
+                </td>
+            </tr>
+            <tr>
+                <td>JS</td>
+                <td>Javascript</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h1>TABLE WITH AUTO LAYOUT</h1>
+        <table class="table-none">
+            <tr>
+                <td>
+                    HTML
+                </td>
+                <td>
+                    CSS
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Hypertext Markable Language
+                </td>
+                <td>
+                    Cascading Style Sheet
+                </td>
+            </tr>
+            <tr>
+                <td>JS</td>
+                <td>Javascript</td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+    <hr>
+
+    <!-- 2. Create a list and change its list-style-type -->
+    <section>
+        <h1>ORDERED LIST</h1>
+        <ol>
+            <li>Html</li>
+            <li>Css</li>
+            <li>Js</li>
+        </ol>
+    </section>
+    <section>
+        <h1>UNORDERED LIST</h1>
+        <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>Js</li>
+        </ul>
+    </section>
+    <hr>
+
+    <!-- 3. Create a grid with of different types -->
+    <hr>
+    <section>
+        <h1>BASIC GRID</h1>
+        <div class="basic-grid">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+        </div>
+    </section>
+    <section>
+        <h1>RESPONSIVE GRID</h1>
+        <div class="responsive-grid">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+        </div>
+    </section>
+    <section>
+        <h1>CENTERED GRID</h1>
+        <div class="centered-grid">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+        </div>
+    </section>
+    <section>
+        <h1>NESTED GRID</h1>
+        <div class="nested-grid">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+        </div>
+    </section>
+
+    <!-- 4. Create a hero image -->
+    <hr>
+    <hr>
+    <h1>HERO IMAGE</h1>
+    <div>
+        <img src="../Images/AIimage.jpg" alt="Hero Image" class="hero-image" width="300px" height="300px">
+    </div>
+    <hr>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Elements</title>
+</head>
+
+<body>
+
+    <!--  non-semantic elements <div> and <span> -->
+
+    <!-- Div and Span -->
+    <div id="ai">
+        <h1 style="text-align: center;">TOP TECHNOLOGY : ARTIFICIAL INTELLIGENCE</h1>
+        <p style="text-align: justify; font-size: x-large; padding: 5px; line-break: normal;"><span
+                style="color: blue;">AI technology</span> is breaking into finance, healthcare, manufacturing, and
+            dozens of other industries.
+            And, it’s not a technology reserved for big enterprises anymore.
+            With <span style="color: blue;">open-source AI</span> solutions and <span style="color: blue;">lower cost
+                and complexity of systems</span>, the democratization of AI is in full
+            swing.</p>
+    </div>
+
+    <!-- The semantic elements <form>, <table> and <article> -->
+
+    <!-- Form -->
+    <div>
+        <form action="" id="queries"
+            style="width:350px; height: 300px; margin: auto; padding: 10px; border: 2px solid black; box-shadow: 2px 2px white; border-radius: 10px;">
+            <h1>QUERIES FORM</h1>
+            <p style="font-size: medium;">Feel Free to ask your Queries...</p>
+            <input type="text" name="name" id="name" placeholder="User">
+            <input type="email" name="email" id="email" placeholder="user@gmail.com">
+            <input type="number" name="number" id="number" placeholder="+91">
+            <input type="text" name="location" id="location" placeholder="Location">
+            <textarea name="queries" id="queries" cols="30" rows="5">Queries...</textarea>
+        </form>
+    </div>
+
+    <!-- Table -->
+    <div>
+        <table
+            style="width: 50%;margin:auto;margin-top:15px; padding: 10px;border: 2px solid grey; border-radius: 10px; text-align: center; box-shadow: 2px 2px white;">
+            <thead style="font-size: x-large;">
+                <tr>
+                    <th>Ranking</th>
+                    <th>Name</th>
+                    <th>Advantages</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Artificial Intelligence</td>
+                    <td>Chatbot Interactions</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Machine Learning</td>
+                    <td>Accurate Predictions</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Robotic Process Automation</td>
+                    <td>Increased safety</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Data Science</td>
+                    <td>Analyze large amounts of data.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Devops</td>
+                    <td>Better Product Delivery.</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Article -->
+
+    <article style="text-align: justify; padding: 10px; font-size: medium;" id="article">
+        <h2><center>The Impact of Artificial Intelligence on Modern Society</center></h2>
+        <p>Artificial Intelligence (AI) is revolutionizing various aspects of modern society, from healthcare to
+            transportation. <b>Here are some key ways AI technology is transforming our world:</b></p>
+        <ol style="text-align: justify; padding: 10px; list-style-type: square;">
+            <li><strong>Healthcare:</strong> AI-powered diagnostic tools are improving the accuracy and efficiency of
+                medical diagnoses, leading to faster treatment and better patient outcomes.</li><br>
+            <li><strong>Autonomous Vehicles:</strong> Self-driving cars, equipped with AI algorithms, are poised to
+                revolutionize transportation, reducing accidents and congestion while increasing efficiency.</li><br>
+            <li><strong>Natural Language Processing:</strong> AI-powered language processing technology is enabling
+                chatbots and virtual assistants to provide instant customer support and streamline communication.</li><br>
+            <li><strong>Finance:</strong> AI algorithms are used in financial institutions for fraud detection, risk
+                assessment, and automated trading, improving security and efficiency in the financial sector.</li><br>
+            <li><strong>Smart Cities:</strong> AI-driven sensors and data analytics are being used to optimize resource
+                management, traffic flow, and energy usage in urban areas, creating more sustainable and livable cities.
+            </li><br>
+            <li><strong>Personalized Recommendations:</strong> AI algorithms analyze vast amounts of data to provide
+                personalized recommendations for products, services, and content, enhancing user experiences and driving
+                sales.</li><br>
+            <li><strong>Robotics:</strong> AI-powered robots are increasingly being used in manufacturing, healthcare,
+                and other industries to automate repetitive tasks, improve productivity, and enhance workplace safety.
+            </li><br>
+        </ol>
+    </article>
+
+    <!-- aside, figcaption, figure,footer,header, hgroup,mark,nav, section,time -->
+
+    <!-- Aside Tag -->
+    <h1>Aside Tag</h1>
+    <aside>
+        The aside element is used for tangentially related content to main content of the page and are often represented as sidebars in printed typography.
+    </aside>
+
+    <!-- Figcaption and Figure Tag -->
+    <h1>Figcaption and Figure Tag</h1>
+    <figure>
+        <img src="../Images/html.png" alt="Html Logo">
+        <figcaption>Figure : Html Logo</figcaption>
+    </figure>
+
+    <!--Footer -->
+    <hr>
+    <h1>Footer Tag</h1>
+    <footer>
+        &copy; Html Semantics 2024, All Rights Reserved
+    </footer>
+    <hr>
+
+    <!-- Header -->
+    <header>
+        <h1>Header Tag</h1>
+        <img src="../Images/html.png" alt="Html Logo" width="100" height="100">
+        <label for="">Html Logo</label>
+    </header>
+
+    <!-- Hgroup -->
+    <hgroup>
+        <h1>HGroup Tag</h1>
+        <p>Hgroup tag is used to surround a heading and one or more elements.</p>
+    </hgroup>
+    
+    <!-- Mark -->
+    <h1>Mark Tag</h1>
+    <p>Mark tag is used <mark>highlight the text</mark></p>
+
+    <!-- Nav -->
+    <h1>Nav Tag</h1>
+    <nav>
+        <ul>
+            <a href="#ai"><li>Home</li></a>
+            <a href="#article"><li>Article</li></a>
+            <a href="#queries"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    <!-- Section -->
+    <h1>Section Tag</h1>
+    <section>
+        <h2>Html</h2>
+        <p>HTML stands for HyperText Markup Language. It is widely-used and popular programming language used for web application development.</p>
+    </section>
+
+    <!-- Time -->
+    <h1>Time Tag</h1>
+    <p>It is used to Specific the Time. <time>Today Time is : <b>10.00 AM</b></time></p>
+</body>
+
+</html>
